@@ -18,6 +18,5 @@ class Cat_esportista:
 
 
 idade = int(input("Digite a idade do jogador: "))
-
 jogador_1 = Cat_esportista(idade)
 jogador_1.categoria()
