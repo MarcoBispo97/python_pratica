@@ -31,7 +31,7 @@ class ParOuImpar:
         while True:
             num_pc = random.randint(1, 100)
             while True:
-                num_jogador = input("Digite o número para jogar:")
+                num_jogador = input("Digite o número para jogar: ")
                 if num_jogador.isdigit():
                     num_jogador = int(num_jogador)
                     break
