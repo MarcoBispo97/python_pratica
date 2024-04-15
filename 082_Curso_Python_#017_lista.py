@@ -9,7 +9,6 @@ class Par_impar:
     def __init__(self):
         self.entradas = self.recebe_entradas()
         self.entradas_pares, self.entradas_impares = self.entradas_pares_impares()
-
     def recebe_entradas(self):
         entradas = []
         while True:
@@ -22,7 +21,6 @@ class Par_impar:
             if sair == "s":
                 break
         return entradas
-
     def entradas_pares_impares(self):
         n_pares = []
         n_impares = []
@@ -32,12 +30,10 @@ class Par_impar:
             else:
                 n_impares.append(n)
         return n_pares, n_impares
-
     def show(self):
         print("Lista digitada: ", self.entradas)
         print("Números pares: ", self.entradas_pares)
         print("Números ímpares: ", self.entradas_impares)
-
 
 if __name__ == "__main__":
     teste1 = Par_impar()

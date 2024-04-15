@@ -33,5 +33,4 @@ def mega_palpite():
     for index, jogo in enumerate(jogos, start=1):
         print(f"{index}o jogo: ", jogo)
 
-
 mega_palpite()

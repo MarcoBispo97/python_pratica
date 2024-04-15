@@ -8,7 +8,6 @@ class Escola:
     def __init__(self):
         self.nomes_notas = self.recebe_nomes_notas()
         self.lista_index = self.medias()
-
     def recebe_nomes_notas(self):
         lista_nomes_notas = []
         dados_aluno_n = []
@@ -18,13 +17,11 @@ class Escola:
                 print("Por favor digite um nome válido")
             else:
                 dados_aluno_n.append(nome)
-
             nota_1 = input("Nota 1: ")
             if nota_1.isdigit():
                 dados_aluno_n.append(int(nota_1))
             else:
                 print("Por favor digite um número")
-
             nota_2 = input("Nota 2: ")
             if nota_2.isdigit():
                 dados_aluno_n.append(int(nota_2))
@@ -38,7 +35,6 @@ class Escola:
             if sair == "s":
                 break
         return lista_nomes_notas
-
     def medias(self):
         lista_index = []
         print("{:<5} {:<12} {:<4}".format("No.", "Aluno", "Média"))
@@ -64,7 +60,5 @@ class Escola:
                 print("Não existe aluno com esse número, olhe a tabela acima")
             else:
                 print("Digite um número válido")
-
-
 teste1 = Escola()
 teste1.notas()
