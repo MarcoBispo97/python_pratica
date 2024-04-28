@@ -31,7 +31,7 @@ for i in jogador.keys():
 print()
 print("-" * 40)
 for k, v in enumerate(time):
-    print(f'{k:>3}', end="")
+    print(f'{k:>3} ', end="")
     for d in v.values():
         print(f'{str(d):<15}', end='')
     print()
