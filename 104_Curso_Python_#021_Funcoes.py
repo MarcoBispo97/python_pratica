@@ -16,5 +16,4 @@ def leiaint():
             print("\033[0;31mErro digite um número!\033[m")
     return numint
 
-
 leiaint()
