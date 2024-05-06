@@ -1,9 +1,10 @@
-# Melhore o 107
-# crie a função adicional chamada moeda()
-# que consiga mostrar os valores como um
-# valor monetário formatado
+# Modifique as funções do desafio 107
+# para que elas aceitem um parametro
+# a mais informando se o valor retornado por elas vai ser ou não
+# formatado pela função moeda()
+# desenvolvido no 108
 
-import moeda_contas
+import ex109_moeda
 
 while True:
     moeda = input("Digite o preço R$: ")
@@ -12,8 +13,8 @@ while True:
         break
 
 print(
-    f"O dobro de {moeda_contas.formatar(moeda)} é {moeda_contas.formatar(moeda_contas.dobro(moeda))}")
+    f"O dobro de {ex109_moeda.formatar(moeda)} é {ex109_moeda.dobro(moeda)}")
 print(
-    f"O metade de {moeda_contas.formatar(moeda)} é {moeda_contas.formatar(moeda_contas.metade(moeda))}")
-print(f"{moeda_contas.formatar(moeda)} mais dez porcento do mesmo é é {moeda_contas.formatar(moeda_contas.aumentar(10, moeda))}")
-print(f"{moeda_contas.formatar(moeda)} menos vinte porcento do mesmo é é {moeda_contas.formatar(moeda_contas.diminuir(20, moeda))}")
+    f"O metade de {ex109_moeda.formatar(moeda)} é {(ex109_moeda.metade(moeda))}")
+print(f"{ex109_moeda.formatar(moeda)} mais dez porcento do mesmo é é {(ex109_moeda.aumentar(10, moeda, False))}")
+print(f"{ex109_moeda.formatar(moeda)} menos vinte porcento do mesmo é é {(ex109_moeda.diminuir(20, moeda, False))}")
